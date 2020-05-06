@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body{
+  background: #00c6ff;
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  text-align: center;
+}
+
+body *{
+  font-family: 'Lobster', cursive;
+}
+
+h1{
+  color: white;
+  font-size: 70px;
+}
+
+#current_word span.notfinded{
+  color: rgba(255, 255, 255, 0.3)
+ }
+
+#current_word span{
+  font-size: 40px;
+  border-bottom: 3px solid white;
+  margin: 0 5px;
+  padding: 5px 20px;
+  color: white;
+}
+
+#current_word span.lost{
+  color: red;
+}
+
+#keyboard{
+  margin-top: 30px;
+}
+
+#keyboard button{
+  background-color: #1B1464;
+  color: white;
+  padding: 5px;
+  border: 0;
+  margin: 5px;
+  font-size: 20px;
+  display: inline-block;
+  width: 30px;
+  border-radius: 50%;
+}
+
+#keyboard button.used{
+  opacity: 0.5;
+}
+
+#life .heart {
+  background-color: white;
+  display: inline-block;
+  height: 20px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 20px;
+}
+
+#life{
+  margin-top: 50px;
+}
+
+#life .heart.empty {
+  opacity: 0.4;
+}
+
+#life .heart:before,
+#life .heart:after {
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  height: 20px;
+  position: absolute;
+  width: 20px;
+}
+
+#life .heart:before {
+  top: -10px;
+  left: 0;
+}
+
+#life .heart:after {
+  left: 10px;
+  top: 0;
+}
+
+#play_new_game {
+  margin-top: 40px;
+  background: transparent;
+  border: 5px double white;
+  color: white;
+  padding: 10px 20px;
+}
+
+.win_msg, .lost_msg{
+  color: white;
+  font-size: 40px;
+  padding: 20px 0;
+}
